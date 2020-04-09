@@ -1,0 +1,35 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "bannerimg bannerimg bannerimg bannerimg" "name name name name" "footer footer footer footer";
+}
+
+.bannerimg {
+   position: relative;
+   width: 100%; /* for IE 6 */
+   font-family: fantasy;
+
+}
+
+h1 {
+   position: absolute;
+   top: 200px;
+   left: 50px;
+   width: 100%;
+   font-family: Courier;
+   font-size: 72px;
+   color: black;
+}
+
+.banner {
+  filter: blur(8px);
+-webkit-filter: blur(8px);
+}
+
+
+body {
+  background-color: gray;
+
+}
